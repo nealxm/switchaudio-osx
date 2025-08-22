@@ -1,0 +1,19 @@
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: Latest
+
+IndentWidth: 4
+ColumnLimit: 0
+ContinuationIndentWidth: 4
+InsertNewlineAtEOF: true
+IncludeBlocks: Regroup
+SortIncludes: true
+SpacesInLineCommentPrefix:
+  Minimum: 0
+  Maximum: 0
+PointerAlignment: Left
+AlignAfterOpenBracket: BlockIndent
+BinPackArguments: true
+BinPackParameters: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None

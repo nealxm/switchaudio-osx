@@ -1,8 +1,5 @@
 #include "audio_switch.h"
 
-
-
-int main (int argc, const char * argv[]) {
-	return runAudioSwitch(argc, argv);
+int main(const int argc, const char** argv) {
+    return runAudioSwitch(argc, argv);
 }
-

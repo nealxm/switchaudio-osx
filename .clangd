@@ -1,0 +1,38 @@
+CompileFlags:
+  CompilationDatabase: build
+
+Index:
+  Background: Build
+  StandardLibrary: true
+
+Diagnostics:
+  ClangTidy:
+    Add:
+      - bugprone-*
+      - clang-analyzer-*
+      - performance-*
+      - readability-*
+      - modernize-*
+      - portability-*
+      - misc-*
+    Remove:
+      - readability-magic-numbers
+      - readability-identifier-length
+    FastCheckFilter: None
+
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+
+Completion:
+  AllScopes: Yes
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DeducedTypes: true
+  Designators: true
+  BlockEnd: false
+  TypeNameLimit: 0
+
+Hover:
+  ShowAKA: Yes
