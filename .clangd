@@ -16,8 +16,12 @@ Diagnostics:
       - portability-*
       - misc-*
     Remove:
-      - readability-magic-numbers
+      - bugprone-easily-swappable-parameters
+      - bugprone-too-small-loop-variable
       - readability-identifier-length
+      - readability-function-cognitive-complexity
+      - readability-implicit-bool-conversion
+      - readability-else-after-return
     FastCheckFilter: None
 
   UnusedIncludes: Strict

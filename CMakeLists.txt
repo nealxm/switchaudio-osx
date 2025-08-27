@@ -11,7 +11,8 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -pedantic -Weverything \
 -fcolor-diagnostics \
 -Wno-pre-c23-compat \
 -Wno-declaration-after-statement \
--Wno-covered-switch-default"
+-Wno-covered-switch-default \
+-Wno-unsafe-buffer-usage"
 )
 set(CMAKE_C_FLAGS_RELEASE "-O3")
 set(CMAKE_C_FLAGS_DEBUG "-O0 -glldb")
@@ -21,7 +22,7 @@ find_library(audio_framework CoreAudio REQUIRED)
 
 add_executable(switchaudio
     main.c
-    audio_switch.c
+    switchaudio.c
 )
 
 target_link_libraries(switchaudio PRIVATE

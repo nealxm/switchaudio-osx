@@ -1,5 +1,5 @@
-#include "audio_switch.h"
+#include "switchaudio.h"
 
-int main(const int argc, const char** argv) {
-    return runAudioSwitch(argc, argv);
+int main(int argc, char** argv) {
+    return run_cli(argc, argv);
 }
